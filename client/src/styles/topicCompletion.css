@@ -1,0 +1,282 @@
+/* Scoped styles for topic completion & teacher progress features */
+
+.topic-progress-wrap {
+  margin-bottom: 0.75rem;
+}
+
+.topic-progress-count {
+  display: block;
+  font-size: 12px;
+  color: #64748b;
+  margin-bottom: 4px;
+}
+
+.topic-progress-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.topic-progress-track {
+  flex: 1;
+  height: 8px;
+  background: #e2e8f0;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.topic-progress-fill {
+  height: 100%;
+  border-radius: 999px;
+  transition: width 0.25s ease;
+}
+
+.topic-progress-pct {
+  font-size: 12px;
+  font-weight: 600;
+  min-width: 36px;
+  text-align: right;
+}
+
+.topic-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 6px 0;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.topic-row:last-child {
+  border-bottom: none;
+}
+
+.topic-row-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+  min-width: 0;
+}
+
+.topic-row-icon {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+}
+
+.topic-row-icon-done {
+  color: #27500a;
+}
+
+.topic-row-icon-pending {
+  color: #94a3b8;
+}
+
+.topic-row-name {
+  font-size: 13px;
+  color: #334155;
+  line-height: 1.3;
+}
+
+.topic-row-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.topic-status-badge {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 999px;
+}
+
+.topic-status-badge-done {
+  background: #eaf3de;
+  color: #27500a;
+}
+
+.topic-status-badge-pending {
+  background: #f1f1f1;
+  color: #888;
+}
+
+.topic-complete-btn {
+  border-radius: 6px;
+  font-size: 13px;
+  padding: 5px 12px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: opacity 0.15s ease;
+}
+
+.topic-complete-btn-default {
+  border: 1px solid #3b6d11;
+  background: #eaf3de;
+  color: #27500a;
+}
+
+.topic-complete-btn-default:hover:not(:disabled) {
+  background: #d9ebc8;
+}
+
+.topic-complete-btn-done {
+  background: #27500a;
+  color: #eaf3de;
+  border: 1px solid #27500a;
+  cursor: default;
+  opacity: 0.85;
+}
+
+.topic-complete-btn:disabled {
+  cursor: default;
+}
+
+.student-progress-panel {
+  margin-top: 1rem;
+  border-top: 1px solid #e2e8f0;
+  padding-top: 1rem;
+}
+
+.student-progress-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.student-progress-title-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #334155;
+  cursor: pointer;
+}
+
+.student-progress-chevron {
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+.student-progress-refresh {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  background: #fff;
+  color: #64748b;
+  cursor: pointer;
+}
+
+.student-progress-refresh:hover:not(:disabled) {
+  background: #f8fafc;
+}
+
+.student-progress-refresh:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.student-progress-body {
+  margin-top: 0.75rem;
+}
+
+.student-progress-empty {
+  font-size: 13px;
+  color: #94a3b8;
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
+.student-progress-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.student-progress-row-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.student-progress-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 700;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.student-progress-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.student-progress-info .topic-progress-wrap {
+  margin-bottom: 0;
+}
+
+.student-progress-name {
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+  color: #334155;
+  margin-bottom: 4px;
+}
+
+.student-progress-pct-label {
+  font-size: 13px;
+  font-weight: 600;
+  min-width: 40px;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.student-progress-donut {
+  margin-top: 1rem;
+}
+
+.student-progress-legend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 4px;
+}
+
+.student-progress-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.student-progress-legend-swatch {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.student-progress-legend-label {
+  font-size: 12px;
+  color: #64748b;
+}
